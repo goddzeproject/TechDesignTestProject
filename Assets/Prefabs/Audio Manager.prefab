@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4669483382624303557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4669483382624303559}
+  - component: {fileID: 4669483382624303558}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4669483382624303559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4669483382624303557}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4669483382624303558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4669483382624303557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247fbc838056439d859086ed7a0b7e54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sounds:
+  - Name: Main
+    clip: {fileID: 8300000, guid: e1e0db038d09f6d469ba80fcac3c719d, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 1
+    AudioSource: {fileID: 0}
+  - Name: open_door
+    clip: {fileID: 8300000, guid: 2a6b519c2fb22684aa55a7903b4db0be, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    AudioSource: {fileID: 0}
+  - Name: punch
+    clip: {fileID: 8300000, guid: da3cdaf54e464cd40959314d3530599e, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    AudioSource: {fileID: 0}
+  - Name: foootsteps
+    clip: {fileID: 8300000, guid: 41b7b57179436bd4cb883ad486c1a50f, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    AudioSource: {fileID: 0}
+  - Name: keys
+    clip: {fileID: 8300000, guid: 6abbb7f23a2b2024592a018c55c31446, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    AudioSource: {fileID: 0}
+  - Name: paper
+    clip: {fileID: 8300000, guid: fb5820c9a4c5f5c4da1dd0ca6d381e8c, type: 3}
+    Volume: 1
+    Pitch: 1
+    Loop: 0
+    AudioSource: {fileID: 0}
+  MainTheme: Main
