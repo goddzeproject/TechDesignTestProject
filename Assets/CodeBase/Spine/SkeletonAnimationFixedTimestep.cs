@@ -27,9 +27,10 @@
  * SPINE RUNTIMES, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *****************************************************************************/
 
+using Spine.Unity;
 using UnityEngine;
 
-namespace Spine.Unity {
+namespace CodeBase.Spine {
 
 	// To use this example component, add it to your SkeletonAnimation Spine GameObject.
 	// This component will disable that SkeletonAnimation component to prevent it from calling its own Update and LateUpdate methods.
