@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8045793550590044049}
   - component: {fileID: 8045793550590044046}
   m_Layer: 0
-  m_Name: static_old_map
+  m_Name: anim_old_map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
