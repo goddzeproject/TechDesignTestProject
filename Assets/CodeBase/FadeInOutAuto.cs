@@ -10,8 +10,6 @@ namespace CodeBase
         public float Duration = 1f;
         
         private SpriteRenderer spriteRenderer;
-
-        // Start is called before the first frame update
         void Start()
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
@@ -23,7 +21,6 @@ namespace CodeBase
         {
             while (true)
             {
-                // Плавное появление
                 for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / 2.0f)
                 {
                     Color newColor = spriteRenderer.color;
@@ -32,9 +29,8 @@ namespace CodeBase
                 
                     yield return null;
                 }
-                // Пауза перед исчезновением
                 yield return new WaitForSeconds(Duration);
-                // Плавное исчезновение
+
                 for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / 2.0f)
                 {
                     Color newColor = spriteRenderer.color;
@@ -43,7 +39,6 @@ namespace CodeBase
                 
                     yield return null;
                 }
-                // Пауза перед следующим появлением
                 yield return new WaitForSeconds(Duration);
             }
         }

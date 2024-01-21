@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
     public Sounds[] Sounds;
 
     public string MainTheme;
+    public string ambient;
 
     private void Awake()
     {
@@ -37,6 +38,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         Play(MainTheme);
+        Play(ambient);
     }
 
     public void Play(string SoundName)
